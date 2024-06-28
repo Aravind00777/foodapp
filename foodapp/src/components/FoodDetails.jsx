@@ -27,7 +27,7 @@ export default function FoodDetails({ foodId }) {
         <strong>Serve {food.servings}</strong>
       </span>
       <span>{food.vegetarian ? "Vegetarian" : "Non Vegetarian"}</span>
-      <h3 className={style.instruction_title}>Insturcions</h3>
+      <h3 className={style.instruction_title}>New instructions</h3>
       <ul className={style.instructions}>
         {isLoading ? "date loading.....":food.analyzedInstructions[0].steps.map((step) => (
           <li>{step.step}</li>
