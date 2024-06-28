@@ -1,0 +1,9 @@
+.foodlist{
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 45px;
+}

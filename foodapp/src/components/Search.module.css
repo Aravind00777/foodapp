@@ -1,0 +1,12 @@
+.search_top{
+    padding-top: 145px;
+    max-width: 1045px;
+    margin: 0 auto;
+}
+.inputs{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+}
