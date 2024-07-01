@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./FoodDetails.module.css";
+import ItemList from "./ItemList";
 export default function FoodDetails({ foodId }) {
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
   const API_KEY = "6e31452a7524443abaec6c3a6a6f5931";
@@ -27,6 +28,7 @@ export default function FoodDetails({ foodId }) {
         <strong>Serve {food.servings}</strong>
       </span>
       <span>{food.vegetarian ? "Vegetarian" : "Non Vegetarian"}</span>
+      <ItemList food={food}  isLoading={isLoading}/>
       <h3 className={style.instruction_title}>New instructions</h3>
       <ul className={style.instructions}>
         {isLoading ? "date loading.....":food.analyzedInstructions[0].steps.map((step) => (
