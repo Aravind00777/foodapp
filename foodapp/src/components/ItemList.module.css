@@ -1,0 +1,13 @@
+img.ingredientImage{
+    width: 200px;
+    height: 200px;
+}
+.ingredient_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+.ingredient_wrapper > div{
+    text-align: center;
+}

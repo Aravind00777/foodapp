@@ -28,6 +28,7 @@ export default function FoodDetails({ foodId }) {
         <strong>Serve {food.servings}</strong>
       </span>
       <span>{food.vegetarian ? "Vegetarian" : "Non Vegetarian"}</span>
+      <h2>Ingredients</h2>
       <ItemList food={food}  isLoading={isLoading}/>
       <h3 className={style.instruction_title}>New instructions</h3>
       <ul className={style.instructions}>
